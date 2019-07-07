@@ -1,0 +1,12 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Icon test is a Icon 1`] = `
+<svg
+  aria-hidden="true"
+  className="icon"
+>
+  <use
+    xlinkHref="#icon-undefined"
+  />
+</svg>
+`;
