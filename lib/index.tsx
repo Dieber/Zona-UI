@@ -20,21 +20,24 @@ import Dialog from './dialog/dialog';
 
 async function show() {
     try {
-        await Dialog.show()
-        console.log(456)
+        await Dialog.show({
+          title: '我死了',
+          width: 400
+          // content: <div>123</div>
+        })
     } catch (e) {
-        console.log(123)
     }
 }
 
+// show()
 
 ReactDOM.render(
-    <Fragment>
-        <button onClick={show}>123</button>
-    {/* <Dialog onConfirm={onConfirm}></Dialog> */}
-    {/* <IconLoader iconUrl="//at.alicdn.com/t/font_1277302_3478stw4cy9.js"></IconLoader>
-    <Icon name="EURO"/> */}
-</Fragment>
+  <Fragment>
+    <button onClick={show}>123</button>
+      {/* <Dialog onConfirm={onConfirm}></Dialog> */}
+      {/* <IconLoader iconUrl="//at.alicdn.com/t/font_1277302_3478stw4cy9.js"></IconLoader>
+      <Icon name="EURO"/> */}
+  </Fragment>
 ,document.querySelector('#root'))
 
 // export {default as Icon} from './icon/icon'
