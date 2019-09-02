@@ -9,4 +9,4 @@ script:
   # - yarn 
 after_success:
   - chmod +x ./deploy.sh
-  - ./publish.sh
+  - ./deploy.sh
