@@ -7,9 +7,6 @@ install:
 script:
   - yarn test
   # - yarn 
-deploy:
-  provider: pages
-  skip_cleanup: true
-  github_token: $GITHUB_TOKEN
-  on:
-    branch: master
+after_success:
+  - chmod +x ./deploy.sh
+  - ./publish.sh
