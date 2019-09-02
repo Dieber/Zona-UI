@@ -6,7 +6,10 @@ install:
   - yarn
 script:
   - yarn test
-  # - yarn 
-after_success:
-  - chmod +x ./deploy.sh
-  - ./deploy.sh
+  - yarn build
+deploy:
+  provider: script
+  script: netlify deploy -s optimistic-poitras-394703 -t $NETLIFY_PUBLISH_KEY -p ./dist
+  skip_cleanup: true
+  on:
+    branch: master
