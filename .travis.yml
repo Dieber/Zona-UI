@@ -13,7 +13,7 @@ before_deploy:
 
 deploy:
   provider: script
-  script: netlify deploy --site $NETLIFY_SITE_API --auth $NETLIFY_PUBLISH_KEY --dir ./dist
+  script: netlify deploy --site $NETLIFY_SITE_API --auth $NETLIFY_PUBLISH_KEY --dir ./dist/lib
   skip_cleanup: true
   on:
     branch: master
