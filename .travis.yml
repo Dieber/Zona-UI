@@ -8,7 +8,7 @@ script:
   - yarn test
 
 before_deploy:
-  - yarn add netlify-cli -g
+  - yarn global add netlify-cli
   - yarn build
 
 deploy:
