@@ -1,5 +1,5 @@
 {
-  "name": "ownui",
+  "name": "zona",
   "version": "0.0.3",
   "description": "",
   "main": "dist/lib/index",
@@ -14,15 +14,15 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/Dieber/own-ui.git"
+    "url": "git+https://github.com/Dieber/Zona-UI.git"
   },
   "keywords": [],
   "author": "",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/Dieber/own-ui/issues"
+    "url": "https://github.com/Dieber/Zona-UI/issues"
   },
-  "homepage": "https://github.com/Dieber/own-ui#readme",
+  "homepage": "https://github.com/Dieber/Zona-UI#readme",
   "devDependencies": {
     "@babel/preset-env": "^7.5.0",
     "@babel/preset-react": "^7.0.0",

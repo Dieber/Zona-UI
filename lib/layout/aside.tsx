@@ -5,3 +5,4 @@ const Layout: React.FunctionComponent = () => {
         <div></div>
     )
 }
+export default Layout

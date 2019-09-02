@@ -7,3 +7,5 @@ describe('classes test', function() {
     expect(typeof result).toEqual('string')
   })
 })
+
+

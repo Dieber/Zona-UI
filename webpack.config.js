@@ -9,7 +9,7 @@ module.exports = {
     },
     output: {
         path: path.resolve(__dirname, 'dist/lib'),
-        library: 'ownui',
+        library: 'zona',
         libraryTarget: 'umd',
     },
     module: {

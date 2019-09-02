@@ -15,7 +15,7 @@ ReactDOM.render(
   <Router>
     <header>
       <div className="logo">
-        OWN-UI
+        Zona-UI
       </div>
     </header>
     <div>
