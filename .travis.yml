@@ -6,7 +6,11 @@ install:
   - yarn
 script:
   - yarn test
+
+before_deploy:
+  - yarn add netlify-cli -g
   - yarn build
+
 deploy:
   provider: script
   script: netlify deploy -s optimistic-poitras-394703 -t $NETLIFY_PUBLISH_KEY -p ./dist
