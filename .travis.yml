@@ -13,7 +13,7 @@ before_deploy:
 
 deploy:
   provider: script
-  script: netlify deploy -s optimistic-poitras-394703 -t $NETLIFY_PUBLISH_KEY -p ./dist
+  script: netlify deploy --site optimistic-poitras-394703 --auth $NETLIFY_PUBLISH_KEY --dir ./dist
   skip_cleanup: true
   on:
     branch: master
