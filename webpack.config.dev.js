@@ -4,7 +4,11 @@ const base = require('./webpack.config')
 module.exports = Object.assign({}, base, {
     mode: "development",
     devServer: {
-      contentBase: './dist'
+      contentBase: './dist',
+      port: 9347
+    },
+    entry: {
+        example: './examples/index.tsx',
     },
     devtool: 'inline-source-map',
     plugins: [

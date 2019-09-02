@@ -60,3 +60,6 @@ typings/
 
 # next.js build output
 .next
+
+# MacOS the fucking .DS_Store
+.DS_Store
