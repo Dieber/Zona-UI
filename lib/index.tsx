@@ -21,7 +21,7 @@ import Dialog from './dialog/dialog';
 async function show() {
     try {
         await Dialog.show({
-          title: '我死了',
+          title: '我还活着',
           width: 400
           // content: <div>123</div>
         })
