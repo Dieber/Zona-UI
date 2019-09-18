@@ -24,7 +24,7 @@ const scopedClassWithExtra = (prefix: string) => (...prefixArgs: Array<ScArgs | 
 }
 
 const scopedClass = (prefix: string) => (...prefixArgs: Array<ScArgs | string>) => {
-  scopedClassWithExtra(prefix)(...prefixArgs)()
+  return scopedClassWithExtra(prefix)(...prefixArgs)()
 }
 
 
