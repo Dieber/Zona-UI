@@ -1,7 +1,7 @@
-import React from 'react'
+import React, { ButtonHTMLAttributes } from 'react'
 // import classes from '../helpers/classes'
 
-interface ButtonProps {
+interface ButtonProps extends ButtonHTMLAttributes<HTMLButtonElement> {
 
 }
 
@@ -10,8 +10,7 @@ interface ButtonProps {
 // }
 
 
-const Button: React.FunctionComponent<ButtonProps> = 
-  () => {   
+const Button: React.FunctionComponent<ButtonProps> = ({}) => { 
   return (
     <button>123</button>
   )

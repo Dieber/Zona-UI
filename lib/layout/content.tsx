@@ -1,8 +1,8 @@
 import React from 'react'
 
-const Layout: React.FunctionComponent = () => {
+const Content: React.FunctionComponent = () => {
     return (
         <div></div>
     )
 }
-export default Layout
+export default Content

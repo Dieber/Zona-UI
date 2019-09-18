@@ -3,7 +3,7 @@
 exports[`Icon test is a Icon 1`] = `
 <svg
   aria-hidden="true"
-  className="icon"
+  className=""
 >
   <use
     xlinkHref="#icon-undefined"
