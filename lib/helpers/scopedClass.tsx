@@ -4,7 +4,7 @@ interface ScArgs {
 }
 
 
-const scopedClass = (prefix: string) => (...prefixArgs: Array<ScArgs | string>) => (...extraArgs: Array<ScArgs | string>) => {
+const scopedClassWithExtra = (prefix: string) => (...prefixArgs: Array<ScArgs | string>) => (...extraArgs: Array<ScArgs | string>) => {
   
   let prefixArray = (Object.entries(
     Object.assign(
@@ -23,4 +23,11 @@ const scopedClass = (prefix: string) => (...prefixArgs: Array<ScArgs | string>) 
   return prefixArray.concat(extraArray).join(' ')
 }
 
-export default scopedClass
+const scopedClass = (prefix: string) => (...prefixArgs: Array<ScArgs | string>) => {
+  scopedClassWithExtra(prefix)(...prefixArgs)()
+}
+
+
+export {
+  scopedClass,scopedClassWithExtra
+}
