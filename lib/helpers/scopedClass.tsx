@@ -44,3 +44,4 @@ const scopedClass = (prefix: string) => (...prefixArgs: Array<ScArgs | string>) 
 export {
   scopedClass,scopedClassWithExtra,extraClassWithScoped
 }
+

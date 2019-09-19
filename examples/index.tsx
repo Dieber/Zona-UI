@@ -36,3 +36,18 @@ ReactDOM.render(
     </div>
   </Router>
   , document.querySelector('#root'));
+
+
+@foo
+class Bar {
+}
+
+function foo (target: any) {
+  target.prototype.print = function () {
+    console.log('添加了一个新方法')
+  }
+}
+
+let bar = new Bar()
+// @ts-ignore
+bar.print() // 添加了一个新方法
