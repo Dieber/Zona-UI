@@ -22,7 +22,7 @@ interface showProps {
 const defaultContent = () => {
   return (
     <div className="oui-dialog-default-content">
-      aklsdjflksdaf aklsdjflksdaf aklsdjflksdaf aklsdjflksdaf aklsdjflksdaf aklsdjflksdaf 
+      这是一段很长的内容.
     </div>
   )
 }
